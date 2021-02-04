@@ -1,0 +1,38 @@
+{
+    "extends": "./tsconfig.json",
+    "files": [
+      "__tests__/src/Utils/ArrayUtilsTests.ts"
+    ],
+    "exclude": [
+      "node_modules"
+    ],
+    "include": [
+      "__tests__",
+      "node_modules/oidc-client"
+    ],
+    "compilerOptions": {
+      "target": "es6",
+      "strict": false,
+      "noImplicitReturns": false,
+      "noImplicitThis": false,
+      "noImplicitAny": false,
+      "strictNullChecks": false,
+      "skipLibCheck": true,
+      "module": "commonjs",
+      "jsx": "react",
+      "isolatedModules": false,
+      "types": [
+        "node",
+        "jest",
+        "markerclustererplus"
+      ],
+      "lib": [
+        "es5",
+        "es2015.promise",
+        "dom",
+        "es6",
+        "dom.iterable",
+        "esnext"
+      ]
+    }
+  }
